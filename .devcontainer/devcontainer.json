@@ -1,8 +1,10 @@
 {
 	"name": "Node",
 
-	"context": "..",
-	"dockerFile": "Dockerfile",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	
+	"workspaceFolder": "/workspaces/react-tutorial",
 	
 	"settings": {},
 	
@@ -16,11 +18,6 @@
 	],
 
 	"forwardPorts": [3000],
-
-	// Uncomment the next line to run commands after the container is created - for example installing curl.
-	// "postCreateCommand": "apt-get update && apt-get install -y curl",
-
-	"runArgs": [ "--name=vsc-dev-container"],
 
 	"remoteUser": "node",
 }

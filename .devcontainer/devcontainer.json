@@ -1,0 +1,26 @@
+{
+	"name": "Node",
+
+	"context": "..",
+	"dockerFile": "Dockerfile",
+	
+	"settings": {},
+	
+	"extensions": [
+		"xabikos.javascriptsnippets",
+		"formulahendry.auto-rename-tag",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint",
+		"visualstudioexptteam.vscodeintellicode",
+		"esbenp.prettier-vscode"
+	],
+
+	"forwardPorts": [3000],
+
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+
+	"runArgs": [ "--name=vsc-dev-container"],
+
+	"remoteUser": "node",
+}

@@ -1,23 +1,28 @@
 {
-	"name": "Node",
+  "name": "Node",
 
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	
-	"workspaceFolder": "/workspaces/react-tutorial",
-	
-	"settings": {},
-	
-	"extensions": [
-		"xabikos.javascriptsnippets",
-		"formulahendry.auto-rename-tag",
-		"dsznajder.es7-react-js-snippets",
-		"dbaeumer.vscode-eslint",
-		"visualstudioexptteam.vscodeintellicode",
-		"esbenp.prettier-vscode"
-	],
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
 
-	"forwardPorts": [3000],
+  "workspaceFolder": "/workspaces/react-tutorial",
 
-	"remoteUser": "node",
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "extensions": [
+    "xabikos.javascriptsnippets",
+    "formulahendry.auto-rename-tag",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "visualstudioexptteam.vscodeintellicode",
+    "esbenp.prettier-vscode"
+  ],
+
+  "forwardPorts": [3000],
+
+  "remoteUser": "node"
 }

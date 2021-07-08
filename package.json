@@ -23,6 +23,19 @@
     "eject": "react-scripts eject",
     "fmt": "prettier --write **/*.{js,json,md,html}"
   },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "react",
+      "react-app",
+      "@typescript-eslint"
+    ]
+  },
   "prettier": {
     "tabWidth": 2,
     "singleQuote": true
